@@ -1,4 +1,4 @@
-token: "XXXXXXXXXXXXXXXXXXXXXXXX"         # Lichess OAuth2 Token.
+token: "lip_WmYFw16ICwvwApIgFI42"         # Lichess OAuth2 Token.
 
 engine:                                   # Engine settings.
   dir: "./engines"                        # Directory containing the engine.
@@ -19,7 +19,7 @@ engine:                                   # Engine settings.
   uci_options:                            # Arbitrary UCI options passed to the engine. (Commenting allowed)
     Move Overhead: 100                    # Increase if your bot flags games too often.
     Threads: 4                            # Max CPU threads the engine can use.
-    Hash: 256                             # Max memory (in megabytes) the engine can allocate.
+    Hash: 11469                             # Max memory (in megabytes) the engine can allocate.
   variants:
     enabled: false                        # Activate seperate engine for other chess variants than standard and chess960.
     dir: "./engines"                      # Directory containing the engine.
@@ -81,7 +81,7 @@ engine:                                   # Engine settings.
     consecutive_moves: 10                 # How many moves in a row the absolute value of the score has to be below the draw value
     min_game_length: 35                   # Earliest move in which draw is offered.
   resign:
-    enabled: false                        # Activate whether the bot should resign games.
+    enabled: true                        # Activate whether the bot should resign games.
     score: -1000                          # If the score is less than or equal to this value, the bot resigns (in cp).
     consecutive_moves: 5                  # How many moves in a row the score has to be below the resign value.
 
